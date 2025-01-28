@@ -11,7 +11,6 @@
     --button-shadow-distance: calc(var(--shadow-distance) * 2);
     --light-intensity: 30%;
     --under-shadow: calc(var(--light-intensity) * 2);
-    --shadow-color: red;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,7 +47,7 @@ a {
 
 h1 {
     font-family: "Lobster";
-    text-shadow: 0 var(--shadow-distance) color-mix(in srgb, var(--shadow-color) , black var(--under-shadow));
+    text-shadow: 0 var(--shadow-distance) color-mix(in srgb, red, black var(--under-shadow));
     color: red;
     animation-name: colourize-h1;
     animation-timing-function: linear;
@@ -154,7 +153,7 @@ button[name="Email"] {
         text-shadow: 0 var(--shadow-distance) color-mix(in srgb, palevioletred, black var(--under-shadow));
     }
     100% {
-        text-shadow: 0 var(--shadow-distance) color-mix(in srgb, var(--shadow-color) , black var(--under-shadow));
+        text-shadow: 0 var(--shadow-distance) color-mix(in srgb, red, black var(--under-shadow));
         color: red;
     }
 }
