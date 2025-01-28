@@ -7,6 +7,7 @@
     --youtube-color: red;
     --twitch-color: #9146ff;
     --email-color: gray;
+    --steam-color: #144b7e;
     --shadow-distance: .25rem;
     --button-shadow-distance: calc(var(--shadow-distance) * 2);
     --light-intensity: 30%;
@@ -38,6 +39,7 @@ body {
 main {
     margin: 0 auto;
 }
+
 
 a {
     text-decoration: none;
@@ -85,40 +87,40 @@ button:disabled {
 }
 
 button[name="Github"] {
-    font-family: "Mona Sans";
     color: var(--github-text-color);
     background-color: var(--github-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--github-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--github-color), black var(--light-intensity));
-
 }
 
 button[name="Bluesky"] {
     background-color: var(--bluesky-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--bluesky-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--bluesky-color), black var(--light-intensity));
-    font-family: Inter;
 }
 
 button[name="YouTube"] {
     background-color: var(--youtube-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--youtube-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--youtube-color), black var(--light-intensity));
-    font-family: Roboto;
 }
 
 button[name="Twitch"] {
     background-color: var(--twitch-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--twitch-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--twitch-color), black var(--light-intensity));
-    font-family: Inter;
 }
 
 button[name="Email"] {
     background-color: var(--email-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--email-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--email-color), black var(--light-intensity));
-    font-family: Inter;
+}
+
+button[name="Steam"] {
+    background-color: var(--steam-color);
+    box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--steam-color), black var(--under-shadow));
+    border-color: color-mix(in srgb, var(--steam-color), black var(--light-intensity));
 }
 
 @keyframes colourize-h1 {
