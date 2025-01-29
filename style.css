@@ -7,6 +7,7 @@
     --youtube-color: red;
     --twitch-color: #9146ff;
     --email-color: gray;
+    --steam-color: #144b7e;
     --shadow-distance: .25rem;
     --button-shadow-distance: calc(var(--shadow-distance) * 2);
     --light-intensity: 30%;
@@ -112,6 +113,12 @@ button[name="Email"] {
     background-color: var(--email-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--email-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--email-color), black var(--light-intensity));
+}
+
+button[name="Steam"] {
+    background-color: var(--steam-color);
+    box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--steam-color), black var(--under-shadow));
+    border-color: color-mix(in srgb, var(--steam-color), black var(--light-intensity));
 }
 
 @keyframes colourize-h1 {
