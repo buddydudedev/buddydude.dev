@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/motiva-sans');
+@import url('https://fonts.cdnfonts.com/css/dimitri');
+
 :root {
     color-scheme: light dark;
     --github-color: #24292f;
@@ -116,6 +119,8 @@ button[name="Twitch"] {
     background-color: var(--twitch-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--twitch-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--twitch-color), black var(--light-intensity));
+    font-family: system-ui;
+    font-weight: Bold;
 }
 
 button[name="Email"] {
@@ -130,6 +135,8 @@ button[name="Steam"] {
     background-color: var(--steam-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--steam-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--steam-color), black var(--light-intensity));
+    font-family: "Motiva Sans";
+    font-weight: 500;
 }
 
 section {
