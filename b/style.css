@@ -109,6 +109,7 @@ button[name="YouTube"] {
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--youtube-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--youtube-color), black var(--light-intensity));
     font-family: "Roboto Condensed";
+    font-weight: 500;
 }
 
 button[name="Twitch"] {
