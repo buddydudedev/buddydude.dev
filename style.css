@@ -63,7 +63,7 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 15rem;
     height: 3rem;
     vertical-align: middle;
     border-radius: .5rem;
@@ -130,6 +130,10 @@ button[name="Steam"] {
     background-color: var(--steam-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--steam-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--steam-color), black var(--light-intensity));
+}
+
+section {
+    width: 100%;
 }
 
 @keyframes colourize-h1 {
