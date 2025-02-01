@@ -352,6 +352,12 @@ text {
 }
 
 @keyframes colourize-face {
+
+    0% {
+        fill: red;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));
+    }
+
     10% {
         fill: orangered;
         text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, orangered, black var(--logo-under-shadow));
