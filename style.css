@@ -14,6 +14,10 @@
     --button-shadow-distance: calc(var(--shadow-distance) * 2);
     --light-intensity: 30%;
     --under-shadow: calc(var(--light-intensity) * 2);
+    --logo-multiply-level: 80%;
+    --logo-shadow-distance: .15rem;
+    --logo-light-intensity: 30%;
+    --logo-under-shadow: calc(var(--logo-light-intensity) * 2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -186,144 +190,215 @@ section {
     }
 }
 
-/* 
-:root {
-    color-scheme: light dark;
-    --main-size: 512px;
-    --half-main-size: calc(var(--main-size) / 2);
-    --glow-blur: 10rem;
-    --glow-spread: calc(var(--glow-blur) / 2);
-    --glow-opacity: .1;
-    --main-background-opacity: .05;
-    --h1-h1-size: 5rem;
-    --h1-span-h1-size: calc(var(--h1-h1-size) + 1rem);
+.outer {
+    transform: translate(12px, 12px);
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.face {
+    animation-name: colourize-face, colourize-shadow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
 }
 
-main {
-    position: absolute;
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-rows: 2;
-    background-color: initial;
-    top: calc(var(--under-shadow) - var(--half-main-size));
-    left: calc(var(--under-shadow) - var(--half-main-size));
-    width: var(--main-size);
-    height: var(--main-size);
-    animation-name: colourize-glow;
+text {
+    animation-name: colourize-face;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+    text {
+        fill: white;
+    }
+}
+
+
+.lens {
+    fill: black;
+}
+
+.eye {
+    stroke: black;
+}
+
+.rotate-face {
+    transform-origin: calc(50% - 12px) calc(50% - 12px);
+    animation-name: rotate-face;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
     animation-duration: 60s;
+}
+
+.rotate-text {
+    transform-origin: calc(50% - 12px) calc(50% - 12px);
+    animation-name: rotate-face;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    border-radius: 2rem;
-    border-width: .1rem;
-    border-style: solid;
-    background-color: transparent;
-    box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(0, 0, 0, var(--glow-opacity));
+    animation-duration: 60s;
 }
 
-section {
-    padding: 2rem;
-    vertical-align: middle;
-}
-
-h1 {
-    font-family: 'Lobster';
-    font-size: var(--h1-h1-size);
-    text-shadow: calc(var(--h1-h1-size) / 20) calc(var(--h1-h1-size) / 20) 0 black;
-    background-image: linear-gradient(to bottom right, black, mediumaquamarine, mediumblue, mediumorchid, mediumpurple, mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise, mediumvioletred);
-    background-size: 1000% 1000%;
-    background-clip: text;
-    color: transparent;
-    background-repeat: 2;
-    animation-name: colourize-h1;
-    animation-duration: 600s;
+.face-border {
+    animation-name: colourize-border;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-composition: add;
+    animation-duration: 10s;
 }
 
-br {
-    font-size: 1rem;
-}
-
-h1 span {
-    font-size: var(--h1-span-h1-size);
-}
-
-@media (prefers-color-scheme: dark) {
-    h1 {
-        background-image: linear-gradient(to bottom right, white, mediumaquamarine, mediumblue, mediumorchid, mediumpurple, mediumseagreen, mediumslateblue, mediumspringgreen, mediumturquoise, mediumvioletred);
-    }
-    main {
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(255, 255, 255, var(--glow-opacity));
-    }
-}
-
-@keyframes colourize-h1 {
+@keyframes rotate-face {
     100% {
-		background-position: 500% 500%;
-	}
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes colourize-glow {
+@keyframes rotate-text {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colourize-shadow {
     10% {
-        border-color: mediumaquamarine;
-        background-color: rgba(102, 205, 170, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(102, 205, 170, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, orangered, black var(--logo-under-shadow)));
     }
-    var(--light-intensity) {
-        border-color: mediumblue;
-        background-color: rgba(0, 0, 205, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(0, 0, 205, var(--glow-opacity));
+
+    20% {
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, orange, black var(--logo-under-shadow)));
     }
+
     30% {
-        border-color: mediumorchid;
-        background-color: rgba(186, 85, 211, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(186, 85, 211, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, yellowgreen, black var(--logo-under-shadow)));
     }
+
     40% {
-        border-color: mediumpurple;
-        background-color: rgba(147, 112, 216, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(147, 112, 216, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, green, black var(--logo-under-shadow)));
     }
-    var(--under-shadow) {
-        border-color: mediumseagreen;
-        background-color: rgba(60, 179, 113, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(60, 179, 113, var(--glow-opacity));
+
+    50% {
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, teal, black var(--logo-under-shadow)));
     }
+
     60% {
-        border-color: mediumslateblue;
-        background-color: rgba(123, 104, 238, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(123, 104, 238, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, turquoise, black var(--logo-under-shadow)));
     }
+
     70% {
-        border-color: mediumspringgreen;
-        background-color: rgba(0, 250, 154, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(0, 250, 154, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, purple, black var(--logo-under-shadow)));
     }
+
     80% {
-        border-color: mediumturquoise;
-        background-color: rgba(72, 209, 204, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(72, 209, 204, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, mediumpurple, black var(--logo-under-shadow)));
     }
+
     90% {
-        border-color: mediumvioletred;
-        background-color: rgba(199, 21, 133, var(--main-background-opacity));
-        box-shadow: 0 0 var(--glow-blur) var(--glow-spread) rgba(199, 21, 133, var(--glow-opacity));
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, palevioletred, black var(--logo-under-shadow)));
     }
+
     100% {
-        border-color: initial;
-        background-color: transparent;
+        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-image: linear-gradient(to bottom right, black, violet, indigo, blue, green, yellow, orange, red);
+@keyframes colourize-border {
+    0% {
+        stroke: color-mix(in srgb, red, black var(--logo-light-intensity));
     }
-} */
+    
+    10% {
+        stroke: color-mix(in srgb, orangered, black var(--logo-light-intensity));
+    }
+
+    20% {
+        stroke: color-mix(in srgb, orange, black var(--logo-light-intensity));
+    }
+
+    30% {
+        stroke: color-mix(in srgb, yellowgreen, black var(--logo-light-intensity));
+    }
+
+    40% {
+        stroke: color-mix(in srgb, green, black var(--logo-light-intensity));
+    }
+
+    50% {
+        stroke: color-mix(in srgb, teal, black var(--logo-light-intensity));
+    }
+
+    60% {
+        stroke: color-mix(in srgb, turquoise, black var(--logo-light-intensity));
+    }
+
+    70% {
+        stroke: color-mix(in srgb, purple, black var(--logo-light-intensity));
+    }
+
+    80% {
+        stroke: color-mix(in srgb, mediumpurple, black var(--logo-light-intensity));
+    }
+
+    90% {
+        stroke: color-mix(in srgb, palevioletred, black var(--logo-light-intensity));
+    }
+
+    100% {
+        stroke: color-mix(in srgb, red, black var(--logo-light-intensity));
+    }
+}
+
+@keyframes colourize-face {
+    10% {
+        fill: orangered;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, orangered, black var(--logo-under-shadow));
+    }
+
+    20% {
+        fill: orange;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, orange, black var(--logo-under-shadow));
+    }
+
+    30% {
+        fill: yellowgreen;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, yellowgreen, black var(--logo-under-shadow));
+    }
+
+    40% {
+        fill: green;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, green, black var(--logo-under-shadow));
+    }
+
+    50% {
+        fill: teal;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, teal, black var(--logo-under-shadow));
+    }
+
+    60% {
+        fill: turquoise;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, turquoise, black var(--logo-under-shadow));
+    }
+
+    70% {
+        fill: purple;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, purple, black var(--logo-under-shadow));
+    }
+
+    80% {
+        fill: mediumpurple;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, mediumpurple, black var(--logo-under-shadow));
+    }
+
+    90% {
+        fill: palevioletred;
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, palevioletred, black var(--logo-under-shadow));
+    }
+
+    100% {
+        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));
+        fill: red;
+    }
+}
