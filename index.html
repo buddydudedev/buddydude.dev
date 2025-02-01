@@ -6,13 +6,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" href="./favicon-light.svg">
-    <link rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" href="./favicon-dark.svg">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 </head>
 
 <body>
     <main>
-        <h1>Buddy Dude</h1>
+        <a href="logo.svg" target="_blank">
+            <svg viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <style>
+                    :root {
+                        --logo-multiply-level: 80%;
+                        --logo-shadow-distance: .2rem;
+                        --logo-light-intensity: 40%;
+                        --logo-under-shadow: calc(var(--logo-light-intensity) * 2);
+                    }
+            
+                    .outer {
+                        transform: translate(12px, 12px);
+                    }
+            
+                    .face {
+                        animation-name: colourize-face, colourize-shadow;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-duration: 10s;
+                        filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
+                    }
+            
+                    text {
+                        animation-name: colourize-face;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-duration: 10s;
+                        text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));
+            
+            
+                    }
+            
+                    @media (prefers-color-scheme: dark) {
+                        text {
+                            fill: white;
+                        }
+                    }
+            
+            
+                    .lens {
+                        fill: black;
+                    }
+            
+                    .eye {
+                        stroke: black;
+                    }
+            
+                    .rotate-face {
+                        transform-origin: calc(50% - 12px) calc(50% - 12px);
+                        animation-name: rotate-face;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-direction: reverse;
+                        animation-duration: 60s;
+                    }
+            
+                    .rotate-text {
+                        transform-origin: calc(50% - 12px) calc(50% - 12px);
+                        animation-name: rotate-face;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-duration: 60s;
+                    }
+            
+                    .face-border {
+                        animation-name: colourize-border;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-duration: 10s;
+                    }
+            
+                    @keyframes rotate-face {
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+            
+                    @keyframes rotate-text {
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+            
+                    @keyframes colourize-shadow {
+                        10% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, orangered, black var(--logo-under-shadow)));
+                        }
+            
+                        20% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, orange, black var(--logo-under-shadow)));
+                        }
+            
+                        30% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, yellowgreen, black var(--logo-under-shadow)));
+                        }
+            
+                        40% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, green, black var(--logo-under-shadow)));
+                        }
+            
+                        50% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, teal, black var(--logo-under-shadow)));
+                        }
+            
+                        60% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, turquoise, black var(--logo-under-shadow)));
+                        }
+            
+                        70% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, purple, black var(--logo-under-shadow)));
+                        }
+            
+                        80% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, mediumpurple, black var(--logo-under-shadow)));
+                        }
+            
+                        90% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, palevioletred, black var(--logo-under-shadow)));
+                        }
+            
+                        100% {
+                            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
+                        }
+                    }
+            
+                    @keyframes colourize-border {
+                        10% {
+                            stroke: color-mix(in srgb, orangered, black var(--logo-light-intensity));
+                        }
+            
+                        20% {
+                            stroke: color-mix(in srgb, orange, black var(--logo-light-intensity));
+                        }
+            
+                        30% {
+                            stroke: color-mix(in srgb, yellowgreen, black var(--logo-light-intensity));
+                        }
+            
+                        40% {
+                            stroke: color-mix(in srgb, green, black var(--logo-light-intensity));
+                        }
+            
+                        50% {
+                            stroke: color-mix(in srgb, teal, black var(--logo-light-intensity));
+                        }
+            
+                        60% {
+                            stroke: color-mix(in srgb, turquoise, black var(--logo-light-intensity));
+                        }
+            
+                        70% {
+                            stroke: color-mix(in srgb, purple, black var(--logo-light-intensity));
+                        }
+            
+                        80% {
+                            stroke: color-mix(in srgb, mediumpurple, black var(--logo-light-intensity));
+                        }
+            
+                        90% {
+                            stroke: color-mix(in srgb, palevioletred, black var(--logo-light-intensity));
+                        }
+            
+                        100% {
+                            stroke: color-mix(in srgb, red, black var(--logo-light-intensity));
+                        }
+                    }
+            
+                    @keyframes colourize-face {
+                        10% {
+                            fill: orangered;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, orangered, black var(--logo-under-shadow));
+                        }
+            
+                        20% {
+                            fill: orange;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, orange, black var(--logo-under-shadow));
+                        }
+            
+                        30% {
+                            fill: yellowgreen;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, yellowgreen, black var(--logo-under-shadow));
+                        }
+            
+                        40% {
+                            fill: green;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, green, black var(--logo-under-shadow));
+                        }
+            
+                        50% {
+                            fill: teal;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, teal, black var(--logo-under-shadow));
+                        }
+            
+                        60% {
+                            fill: turquoise;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, turquoise, black var(--logo-under-shadow));
+                        }
+            
+                        70% {
+                            fill: purple;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, purple, black var(--logo-under-shadow));
+                        }
+            
+                        80% {
+                            fill: mediumpurple;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, mediumpurple, black var(--logo-under-shadow));
+                        }
+            
+                        90% {
+                            fill: palevioletred;
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, palevioletred, black var(--logo-under-shadow));
+                        }
+            
+                        100% {
+                            text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));
+                            fill: red;
+                        }
+                    }
+                </style>
+                <g class="outer">
+                    <g id="color">
+                        <g class="rotate-text">
+                            <path id="text-circle-buddy" d="
+                M 36 36
+                m 30, 0
+                a 30,30 0 0,1 -60,0
+                a 30,30 0 0,1  60,0
+                " fill="transparent" />
+                            <path id="text-circle-dude" d="
+                M 36 36
+                m 38, 0
+                a 38,38 0 1,0 -76,0
+                a 38,38 0 1,0  76,0
+                " fill="transparent" />
+                            <text>
+                                <textPath startOffset="65%" alignment-baseline="top" font-family="Lobster" font-size="1rem"
+                                    xlink:href="#text-circle-buddy">
+                                    Buddy
+                                </textPath>
+                                <textPath startOffset="69%" alignment-baseline="top" font-family="Lobster" font-size="1rem"
+                                    xlink:href="#text-circle-dude">
+                                    Dude
+                                </textPath>
+                            </text>
+                        </g>
+                        <circle class="face" cx="36" cy="36" r="23" fill="red" />
+                        <g class="rotate-face">
+                            <line class="eye" x1="47.5" x2="42.5" y1="29" y2="33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" />
+                            <line class="eye" x1="42.5" x2="47.5" y1="29" y2="33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" />
+                            <line class="eye" x1="29.5" x2="24.5" y1="29" y2="33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" />
+                            <line class="eye" x1="24.5" x2="29.5" y1="29" y2="33" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" />
+                            <path class="lens"
+                                d="M45.331,38.5639c3.9628,0,7.1782-2.8618,7.1782-6.3889c0-1.7646,0.4473-3.5291-0.8519-4.6852 s-4.3449-1.7037-6.3264-1.7037c-2.3567,0-5.1428,0.1434-6.4514,1.7037c-0.8933,1.0652-0.7268,3.2534-0.7268,4.6852 C38.1528,35.7021,41.3655,38.5639,45.331,38.5639z" />
+                            <path class="lens"
+                                d="M25.7384,38.5639c3.9628,0,7.1782-2.8618,7.1782-6.3889c0-1.7646,0.4473-3.5291-0.8519-4.6852 s-4.3449-1.7037-6.3264-1.7037c-2.3567,0-5.1428,0.1434-6.4514,1.7037c-0.8933,1.0652-0.7268,3.2534-0.7268,4.6852 C18.5602,35.7021,21.7729,38.5639,25.7384,38.5639z" />
+                        </g>
+                    </g>
+                    <g id="hair" />
+                    <g id="skin" />
+                    <g id="skin-shadow" />
+                    <g class="rotate-face">
+                        <g id="line">
+                            <circle class="face-border" cx="35.8871" cy="36.0565" r="23" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2"
+                                d="M18.8826,30.4638c0,0-0.953,8.5508,6.8608,7.9185c2.6197-0.212,7.8164-0.6507,7.867-8.3427 c0.0046-0.6979-0.0078-1.5989-0.8108-2.6298c-1.0647-1.3669-3.5716-1.9711-9.9446-1.422 C22.8551,25.9879,19.4088,25.8888,18.8826,30.4638z" />
+                            <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" points="18.9534,29.9307 18.5203,26.5594 22.3532,26.0317" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2"
+                                d="M52.7412,30.4638c0,0,0.953,8.5508-6.8608,7.9185c-2.6197-0.212-7.8164-0.6507-7.867-8.3427 c-0.0046-0.6979,0.0078-1.5989,0.8108-2.6298c1.0647-1.3669,3.5716-1.9711,9.9446-1.422 C48.7688,25.9879,52.2151,25.8888,52.7412,30.4638z" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2" d="M31.5048,26.4158c0,0,4.1241,2.5339,8.6569,0" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2" d="M33.5361,31.3179c0,0,2.2019-3.7509,4.5362,0" />
+                            <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="2" points="52.6639,29.9332 53.097,26.5619 49.2641,26.0342" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2" d="M33.9549,30.0271c0,0,1.7954-3.7509,3.6988,0" />
+                            <path fill="#EA5A47"
+                                d="M50.5707,44.471c0,0,6.3864,4.2101,6.3864,7.6241c0,2.4671-1.5752,4.5107-4.2717,4.5107 c-3.7214,0-7.6844-6.2448-7.6844-6.2448" />
+                            <path fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="2"
+                                d="M50.5707,44.471c0,0,6.3864,4.2101,6.3864,7.6241 c0,2.4671-1.5752,4.5107-4.2717,4.5107c-3.7214,0-7.6844-6.2448-7.6844-6.2448" />
+                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                                stroke-width="2"
+                                d="M20.1657,41.3575C22.3985,47.9591,28.644,52.7116,36,52.7116c7.3561,0,13.6024-4.7533,15.8349-11.3559" />
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
         <section>
             <a href="mailto:devon@buddydude.dev">
                 <button tabindex="-1" name="Email">
