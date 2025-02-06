@@ -190,16 +190,19 @@ section {
     }
 }
 
+:root {
+    --logo-multiply-level: 80%;
+    --logo-shadow-distance: .15rem;
+    --logo-light-intensity: 30%;
+    --logo-under-shadow: calc(var(--logo-light-intensity) * 2);
+}
+
 .outer {
     transform: translate(12px, 12px);
 }
 
 .face {
-    animation-name: colourize-face, colourize-shadow;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
+    filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, #FCEA2B, black var(--logo-under-shadow)));
 }
 
 text {
@@ -243,13 +246,13 @@ text {
     animation-iteration-count: infinite;
     animation-duration: 60s;
 }
-
+/* 
 .face-border {
     animation-name: colourize-border;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-duration: 10s;
-}
+} */
 
 @keyframes rotate-face {
     100% {
@@ -306,10 +309,11 @@ text {
 }
 
 @keyframes colourize-border {
+
     0% {
         stroke: color-mix(in srgb, red, black var(--logo-light-intensity));
     }
-    
+
     10% {
         stroke: color-mix(in srgb, orangered, black var(--logo-light-intensity));
     }
@@ -352,7 +356,7 @@ text {
 }
 
 @keyframes colourize-face {
-
+    
     0% {
         fill: red;
         text-shadow: 0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow));

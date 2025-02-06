@@ -12,11 +12,7 @@
         }
 
         .face {
-            animation-name: colourize-face, colourize-shadow;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, red, black var(--logo-under-shadow)));
+            filter: drop-shadow(0 var(--logo-shadow-distance) color-mix(in srgb, #FCEA2B, black var(--logo-under-shadow)));
         }
 
         text {
@@ -60,13 +56,13 @@
             animation-iteration-count: infinite;
             animation-duration: 60s;
         }
-
+/* 
         .face-border {
             animation-name: colourize-border;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-duration: 10s;
-        }
+        } */
 
         @keyframes rotate-face {
             100% {
@@ -232,15 +228,15 @@
             <g class="rotate-text">
                 <path id="text-circle-buddy" d="
     M 36 36
-    m 30, 0
-    a 30,30 0 0,1 -60,0
-    a 30,30 0 0,1  60,0
+    m 32, 0
+    a 32,32 0 0,1 -64,0
+    a 32,32 0 0,1  64,0
     " fill="transparent" />
                 <path id="text-circle-dude" d="
     M 36 36
-    m 38, 0
-    a 38,38 0 1,0 -76,0
-    a 38,38 0 1,0  76,0
+    m 40, 0
+    a 40,40 0 1,0 -80,0
+    a 40,40 0 1,0  80,0
     " fill="transparent" />
                 <text>
                     <textPath startOffset="65%" alignment-baseline="top" font-family="Lobster" font-size="1rem"
@@ -253,7 +249,7 @@
                     </textPath>
                 </text>
             </g>
-            <circle class="face" cx="36" cy="36" r="23" fill="red" />
+            <circle class="face" cx="36" cy="36" r="23" fill="#FCEA2B" />
             <g class="rotate-face">
                 <line class="eye" x1="47.5" x2="42.5" y1="29" y2="33" stroke-linecap="round" stroke-linejoin="round"
                     stroke-miterlimit="10" stroke-width="2" />
@@ -274,7 +270,7 @@
         <g id="skin-shadow" />
         <g class="rotate-face">
             <g id="line">
-                <circle class="face-border" cx="35.8871" cy="36.0565" r="23" fill="none" stroke-linecap="round"
+                <circle class="face-border" cx="35.8871" cy="36.0565" r="23" fill="none" stroke-linecap="round" stroke="black"
                     stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1" />
                 <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
                     stroke-width="2"
