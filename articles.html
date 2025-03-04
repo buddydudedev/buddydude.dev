@@ -1,0 +1,12 @@
+---
+title: Articles
+layout: default
+url: /articles
+---
+{% if site.categories.articles.size > 1 %}
+<section class="articles-feed">
+    {% include articles-feed.html %}
+</section>
+{% else %}
+    {% include under-construction.html %}
+{% endif %}

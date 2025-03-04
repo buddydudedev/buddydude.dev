@@ -1,0 +1,12 @@
+---
+title: Portfolio
+layout: default
+url: /portfolio
+---
+{% if site.categories.portfolio.size > 1 %}
+<section class="portfolio-feed">
+    {% include portfolio-feed.html %}
+</section>
+{% else %}
+    {% include under-construction.html %}
+{% endif %}
