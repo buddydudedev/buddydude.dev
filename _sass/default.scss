@@ -655,6 +655,14 @@ section hr {
   margin-bottom: 3rem;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: .5rem;
+}
+
 table, th, td {
   border: 1px solid;
 }
