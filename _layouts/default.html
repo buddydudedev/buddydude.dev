@@ -13,7 +13,8 @@
         <a href="/"><span>{{ site.author }}</span></a>
         <nav>
             <ul>
-                {% for category in site.categories reversed %}
+                <li><a href="/about">About</a></li>
+                {% for category in site.categories %}
                     <li><a href="/{{ category[0] }}">{{ category[0] | capitalize }}</a></li> {% unless forloop.last %} &bullet; {% endunless %}
                 {% endfor %}
             </ul>

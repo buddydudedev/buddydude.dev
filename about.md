@@ -2,7 +2,6 @@
 layout: post
 title: About Me
 permalink: /about
-category: about
 ---
 
 {% include under-construction.html %}

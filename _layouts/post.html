@@ -2,7 +2,7 @@
 layout: default
 ---
 <article>
-    {% unless page.category == "about" or page.category == "articles" %}
+    {% unless page.category == "about" %}
         {% include post-details.html %}
     {% endunless %}
     {{ content }}
