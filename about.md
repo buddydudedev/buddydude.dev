@@ -21,12 +21,12 @@ I'm a professional nerd passionate about interactive design, software engineerin
 
 ### Programming Languages
 
-JavaScript/TypeScript &bullet; HTML/CSS &bullet; PHP &bullet; C++ &bullet; Python &bullet; Java
+JavaScript/TypeScript • HTML/CSS • PHP • C++ • Python • Java
 
 ### Frameworks/Engines
 
-Next.js/React &bullet; Laravel &bullet; Maya API &bullet; Unreal Engine &bullet; jQuery
+Next.js/React • Laravel • Maya API • Unreal Engine • jQuery
 
 ### Software/Tooling
 
-Unreal Engine &bullet; Visual Studio &bullet; Visual Studio Code &bullet; Adobe Creative Cloud &bullet; Microsoft Office &bullet; Docker
+Unreal Engine • Visual Studio • Visual Studio Code • Adobe Creative Cloud • Microsoft Office • Docker
