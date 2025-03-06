@@ -2,13 +2,13 @@
 title: Welcome
 layout: default
 ---
-{% if site.categories.article.size > 1 %}
+{% if site.categories.article.size > 0 %}
 <section class="article-feed">
     {% include article-feed.html %}
     <hr>
 </section>
 {% endif %}
-{% if site.categories.portfolio.size > 1 %}
+{% if site.categories.portfolio.size > 0 %}
 <section class="portfolio-feed">
     {% include portfolio-feed.html %}
 </section>
