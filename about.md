@@ -17,6 +17,14 @@ I'm a professional nerd passionate about interactive design, software engineerin
 | Savannah College of Art and Design | Teaching Assistant | Education |   Savannah, GA   |    2020   |
 |              YETi CGI              |  Junior Developer  |  Gaming   | Grand Rapids, MI | 2017-2018 |
 
+## Education
+
+|               School               | Degree |                 Subject                 |  GPA |  Year(s)  |
+|:----------------------------------:|:------:|:---------------------------------------:|:----:|:---------:|
+| Savannah College of Art and Design |   MFA  | Interactive Design and Game Development |  4.0 | 2018-2021 |
+|       Ferris State University      |   BAS  |    Digital Animation and Game Design    | 3.75 | 2014-2017 |
+|      Oakland Community College     |   ALA  |               Liberal Arts              | 3.95 | 2012-2014 |
+
 ## Skills
 
 ### Programming Languages
