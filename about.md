@@ -10,12 +10,12 @@ I'm a professional nerd passionate about interactive design, software engineerin
 
 ## Recent Experience
 
-|              Employer              |      Job Title     |   Field   |     Location     |  Year(s)  |
-|:----------------------------------:|:------------------:|:---------:|:----------------:|:---------:|
-|      Michigan State University     |    Web Developer   | Education |    Lansing, MI   |   2022+   |
-| Savannah College of Art and Design |        Tutor       | Education |   Savannah, GA   | 2020-2021 |
-| Savannah College of Art and Design | Teaching Assistant | Education |   Savannah, GA   |    2020   |
-|              YETi CGI              |  Junior Developer  |  Gaming   | Grand Rapids, MI | 2017-2018 |
+|              Employer              |      Job Title     |     Location     |  Year(s)  |
+|:----------------------------------:|:------------------:|:----------------:|:---------:|
+|      Michigan State University     |    Web Developer   |    Lansing, MI   |   2022+   |
+| Savannah College of Art and Design |        Tutor       |   Savannah, GA   | 2020-2021 |
+| Savannah College of Art and Design | Teaching Assistant |   Savannah, GA   |    2020   |
+|              YETi CGI              |  Junior Developer  | Grand Rapids, MI | 2017-2018 |
 
 ## Education
 
@@ -29,12 +29,12 @@ I'm a professional nerd passionate about interactive design, software engineerin
 
 ### Programming Languages
 
-JavaScript/TypeScript • HTML/CSS • PHP • C++ • Python • Java
+JavaScript/TypeScript • HTML/CSS • PHP • C++ • Python • GDScript • Java
 
 ### Frameworks/Engines
 
-Next.js/React • Laravel • Maya API • Unreal Engine • jQuery
+Next.js/React • Laravel • Godot Engine • Unreal Engine • Autodesk Maya SDK • jQuery
 
 ### Software/Tooling
 
-Unreal Engine • Visual Studio • Visual Studio Code • Adobe Creative Cloud • Microsoft Office • Docker
+Godot Engine • Unreal Engine • Visual Studio • Visual Studio Code • Adobe Creative Cloud • Microsoft Office • Docker
