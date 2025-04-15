@@ -12,7 +12,7 @@
 
 :root {
   color-scheme: light dark;
-  font-family: "Apfel Grotezk Regular";
+  font-family: system-ui, sans-serif;
   --post-transition-speed: 250ms;
   --post-radius: 1rem;
   --shadow-length: .25rem;
@@ -634,12 +634,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Apfel Grotezk Satt';
+  font-family: system-ui, sans-serif;
 }
 
 pre,
 code {
-  font-family: 'Necto Mono';
+  font-family: ui-monospace, monospace;
 }
 
 hr {
