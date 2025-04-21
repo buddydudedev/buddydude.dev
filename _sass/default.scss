@@ -22,7 +22,7 @@ header nav a,
 p a {
   color: red;
   animation-name: colorize-links;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -96,7 +96,7 @@ main {
   border-radius: var(--post-radius);
   border-style: solid;
   animation-name: colorize-post;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   --post-border-opacity: .5;
@@ -134,7 +134,7 @@ header span {
   color: red;
   text-shadow: 0 calc(var(--shadow-length) / 1.5) darkred;
   animation-name: colorize-logo;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -175,7 +175,7 @@ footer nav ul li a:hover {
   border-radius: var(--post-radius);
   border-style: solid;
   animation-name: colorize-post;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   --post-border-opacity: .5;
@@ -316,7 +316,7 @@ article img {
   border-radius: var(--post-radius);
   border-style: solid;
   animation-name: colorize-post;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   --post-border-opacity: .5;
@@ -336,7 +336,7 @@ pre {
   border-radius: var(--post-radius);
   border-style: solid;
   animation-name: colorize-post;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   --post-border-opacity: .5;
@@ -644,7 +644,7 @@ code {
 hr {
   color: red;
   animation-name: colorize-hr;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
