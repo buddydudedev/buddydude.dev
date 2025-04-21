@@ -6,7 +6,7 @@ permalink: /about
 
 Hello, thanks for coming to my website! 👋
 
-I'm a professional nerd passionate about interactive design, software engineering, cooperative economics, media and society, history, politics, and art. I'm current looking to start teaching at a public university or community college so if you're aware of any opportunities like these please feel free to reach out to me through [email](mailto:devon@buddydude.dev).
+I'm a professional nerd passionate about interactive design, software engineering, cooperative economics, media and society, history, politics, and art. I'm current looking to start teaching at a university or community college so if you're aware of any opportunities like these please feel free to reach out to me through [email](mailto:devon@buddydude.dev).
 
 ## Recent Experience
 
