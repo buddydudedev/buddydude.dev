@@ -18,14 +18,14 @@
   --shadow-length: .25rem;
 }
 
-header nav a,
-p a {
-  color: red;
-  animation-name: colorize-links;
-  animation-duration: 60s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
+// header nav a,
+// p a {
+//   color: red;
+//   animation-name: colorize-links;
+//   animation-duration: 60s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+// }
 
 h1 a,
 header>a,
@@ -131,12 +131,12 @@ header {
 header span {
   font-weight: 700;
   font-size: 3rem;
-  color: red;
-  text-shadow: 0 calc(var(--shadow-length) / 1.5) darkred;
-  animation-name: colorize-logo;
-  animation-duration: 60s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  // color: red;
+  // text-shadow: 0 calc(var(--shadow-length) / 1.5) darkred;
+  // animation-name: colorize-logo;
+  // animation-duration: 60s;
+  // animation-timing-function: linear;
+  // animation-iteration-count: infinite;
 }
 
 nav ul {
