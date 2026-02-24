@@ -10,6 +10,7 @@
     --twitch-color: #9146ff;
     --email-color: gray;
     --steam-color: #144b7e;
+    --x-color: #0f1419;
     --shadow-distance: .25rem;
     --button-shadow-distance: calc(var(--shadow-distance) * 2);
     --light-intensity: 30%;
@@ -132,6 +133,14 @@ button[name="Steam"] {
     background-color: var(--steam-color);
     box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--steam-color), black var(--under-shadow));
     border-color: color-mix(in srgb, var(--steam-color), black var(--light-intensity));
+    font-family: "Motiva Sans";
+    font-weight: 500;
+}
+
+button[name="X"] {
+    background-color: var(--x-color);
+    box-shadow: 0 var(--button-shadow-distance) color-mix(in srgb, var(--x-color), black var(--under-shadow));
+    border-color: color-mix(in srgb, var(--x-color), black var(--light-intensity));
     font-family: "Motiva Sans";
     font-weight: 500;
 }
