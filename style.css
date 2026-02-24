@@ -54,13 +54,6 @@ a {
 }
 
 h1 {
-    font-family: "Lobster";
-    text-shadow: 0 var(--shadow-distance) color-mix(in srgb, red, black var(--under-shadow));
-    color: red;
-    animation-name: colourize-h1;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
     margin-top: 0;
     margin-bottom: 2rem;
 }
